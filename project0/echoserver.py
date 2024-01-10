@@ -1,3 +1,6 @@
+######################################################
+##### Simple echo server which handles 1 client. #####
+######################################################
 #!/usr/bin/python
 import socket
 import sys
@@ -5,12 +8,13 @@ import sys
 # Create a tcp socket
 tcpSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
-# Fix error address already in use
+# Fix error, address already in use
 tcpSocket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 
 # Bind socket to an address
-(host, port) = sys.argv[1], int(sys.argv[2])
-tcpSocket.bind((host, port))
+host, port = sys.argv[1], int(sys.argv[2])
+address = (host, port)
+tcpSocket.bind(address)
 
 # Enable the server to accept connections
 tcpSocket.listen()
@@ -26,9 +30,7 @@ print("Connected to client:", clientIp, "on port", clientPort)
 data = "foo"
 while len(data):
     data = client.recv(2048)
-    print("client:", data.decode())
-    msg = input("server:")
-    client.send(msg.encode())
+    print(data.decode())
 
 print("Closing connection...")
 client.close()
