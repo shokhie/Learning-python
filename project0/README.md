@@ -17,9 +17,8 @@ If you want to understand it, think it as an endpoint for sending and receiving 
 
 ## Goals --
 + Create a simple echo server to handle 1 client.
-  Once you have created the server, there are many ways to process clients.
+  - Once you have created the server, there are many ways to process clients.
   
-+ Create a 
-
-
-
++ Create a Multi-Threaded echo server
++ Creare a Multi-Process echo server
++ Create a Non-blocking Multiplexed Echo Server using Select().
