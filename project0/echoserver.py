@@ -1,7 +1,7 @@
 ######################################################
 ##### Simple echo server which handles 1 client. #####
 ######################################################
-#!/usr/bin/python
+#!/usr/bin/env python
 import socket
 import sys
 
