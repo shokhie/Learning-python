@@ -15,7 +15,7 @@ If you want to understand it, think it as an endpoint for sending and receiving 
 + Raw sockets - Allow direct sending and receiving of ip packets without any protocol specific transport layer formatting.
   Used for **sniffing** and **injection**. Nmap uses raw sockets.
 
-## Goals --
+## Goals 
 + Create a simple echo server to handle 1 client.
   - Once you have created the server, there are many ways to process clients.
   
