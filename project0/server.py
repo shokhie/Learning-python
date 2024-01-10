@@ -1,5 +1,6 @@
 #!/usr/bin/python
 import socket
+import sys
 
 # Create a tcp socket
 tcpSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -8,13 +9,13 @@ tcpSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 tcpSocket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 
 # Bind socket to an address
-address = ("192.168.1.7", 1337)
-tcpSocket.bind(address)
+(host, port) = sys.argv[1], int(sys.argv[2])
+tcpSocket.bind((host, port))
 
 # Enable the server to accept connections
 tcpSocket.listen()
 
-print("Waiting for connection...")
+print("Waiting for connection...", host, port)
 
 # Accept a connection
 (client, (clientIp, clientPort)) = tcpSocket.accept()
@@ -25,7 +26,9 @@ print("Connected to client:", clientIp, "on port", clientPort)
 data = "foo"
 while len(data):
     data = client.recv(2048)
-    print(data.decode("utf-8"), end="")
+    print("client:", data.decode())
+    msg = input("server:")
+    client.send(msg.encode())
 
 print("Closing connection...")
 client.close()
