@@ -11,7 +11,7 @@ If you want to understand it, think it as an endpoint for sending and receiving 
 
 ### Socket types
 + Datagram sockets - Connectionless sockets, which uses User Datagram Protocol(UDP). Used for making regular clients and servers.
-+ Stream sockets - Connection-oriented sockets, which uses Transmission Control Protocol(TCP).Used for making regular clients and servers.
++ Stream sockets - Connection-oriented sockets, which uses Transmission Control Protocol(TCP). Used for making regular clients and servers.
 + Raw sockets - Allow direct sending and receiving of ip packets without any protocol specific transport layer formatting.
   Used for **sniffing** and **injection**. Nmap uses raw sockets.
 
