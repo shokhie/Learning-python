@@ -28,6 +28,6 @@ If you want to understand it, think it as an endpoint for sending and receiving 
 + Create a Non-blocking Multiplexed Echo Server using Select().
 
 ## References
-[A nice how to on socket programming.](https://docs.python.org/3/howto/sockets.html)
-[sockets](https://en.wikipedia.org/wiki/Network_socket)
-[ipc](https://en.wikipedia.org/wiki/Inter-process_communication)
+[A nice how to on socket programming.](https://docs.python.org/3/howto/sockets.html)  
+[sockets](https://en.wikipedia.org/wiki/Network_socket)  
+[ipc](https://en.wikipedia.org/wiki/Inter-process_communication)  
