@@ -16,7 +16,7 @@ If you want to understand it, think it as an endpoint for sending and receiving 
   Used for making regular clients and servers.
 + Raw sockets - Allow direct sending and receiving of ip packets without any protocol specific 
   transport layer formatting. Used for **sniffing** and **injection**. Nmap uses raw sockets.  
-  After this whenever we talk about sockets, it will be stream sockets.
+  After this whenever we talk about sockets, it will be stream sockets i.e tcp socket.
 
 ## Goals 
 + Create a simple echo server to handle 1 client.
