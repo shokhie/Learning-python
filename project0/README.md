@@ -19,8 +19,9 @@ If you want to understand it, think it as an endpoint for sending and receiving 
 
 ## Goals 
 + Create a simple echo server to handle 1 client.
-  - Once you have created the server [socket](https://docs.python.org/3/howto/sockets.html#creating-a-socket) , you need some way to handle server clientsocket.There are generally 3 ways to handle clients 
-    - dispatching a thread to handle clientsocket, create a new process to handle client
+  - Once you have created the server [socket](https://docs.python.org/3/howto/sockets.html#creating-
+    a-socket) , you need some way to handle server clientsocket.There are generally 3 ways to handle 
+    clients dispatching a thread to handle clientsocket, create a new process to handle client
 + Create a Multi-Threaded echo server
 + Creare a Multi-Process echo server
 + Create a Non-blocking Multiplexed Echo Server using Select().
