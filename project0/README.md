@@ -10,15 +10,17 @@ can be acheived but for cross platform communications, sockets are the best.
 If you want to understand it, think it as an endpoint for sending and receiving data across the network.
 
 ### Socket types
-+ Datagram sockets - Connectionless sockets, which uses User Datagram Protocol(UDP). Used for making regular clients and servers.
-+ Stream sockets - Connection-oriented sockets, which uses Transmission Control Protocol(TCP). Used for making regular clients and servers.
-+ Raw sockets - Allow direct sending and receiving of ip packets without any protocol specific transport layer formatting.
-  Used for **sniffing** and **injection**. Nmap uses raw sockets.
++ Datagram sockets - Connectionless sockets, which uses User Datagram Protocol(UDP). Used for 
+  making regular clients and servers.
++ Stream sockets - Connection-oriented sockets, which uses Transmission Control Protocol(TCP). 
+  Used for making regular clients and servers.
++ Raw sockets - Allow direct sending and receiving of ip packets without any protocol specific 
+  transport layer formatting. Used for **sniffing** and **injection**. Nmap uses raw sockets.
 
 ## Goals 
 + Create a simple echo server to handle 1 client.
-  - Once you have created the server, there are many ways to process clients.
-  
+  - Once you have created the server [socket](https://docs.python.org/3/howto/sockets.html#creating-a-socket) , you need some way to handle server clientsocket.There are generally 3 ways to handle clients 
+    - dispatching a thread to handle clientsocket, create a new process to handle client
 + Create a Multi-Threaded echo server
 + Creare a Multi-Process echo server
 + Create a Non-blocking Multiplexed Echo Server using Select().
