@@ -32,3 +32,4 @@ If you want to understand it, think it as an endpoint for sending and receiving 
 [A nice how to on socket programming.](https://docs.python.org/3/howto/sockets.html)  
 [sockets](https://en.wikipedia.org/wiki/Network_socket)  
 [ipc](https://en.wikipedia.org/wiki/Inter-process_communication)  
+[Beej's Guide to Network Programming](https://beej.us/guide/bgnet/html/split/)

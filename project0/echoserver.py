@@ -1,7 +1,7 @@
-######################################################
-##### Simple echo server which handles 1 client. #####
-######################################################
 #!/usr/bin/env python
+'''
+Simple echo server which handles 1 client. 
+'''
 import socket
 import sys
 
@@ -30,7 +30,7 @@ print("Connected to client:", clientIp, "on port", clientPort)
 data = "foo"
 while len(data):
     data = client.recv(2048)
-    print(data.decode())
+    print(data.decode(), end='')
 
 print("Closing connection...")
 client.close()
