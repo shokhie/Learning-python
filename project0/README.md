@@ -27,6 +27,7 @@ If you want to understand it, think it as an endpoint for sending and receiving 
 + Implement threading to handle client sockets.
 + Create a Multi-Process echo server.
 + Create a Non-blocking Multiplexed Echo Server using Select().
++ Implement a proper way in which data can be exchanged between client and server.
 
 ## References
 [A nice how to on socket programming.](https://docs.python.org/3/howto/sockets.html)  
