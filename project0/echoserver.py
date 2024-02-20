@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 '''
-A echo server
+An echo server
 '''
 import socket
 
